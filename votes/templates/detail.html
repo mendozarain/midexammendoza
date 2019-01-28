@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+   Details
+{% endblock  %}
+
+
+{% block body %}
+
+
+
+  <a> {{candidate.lastname}},  {{candidate.firstname}} </a> <br />
+  <a> {{candidate.position}}</a> <br />
+  <a> {{candidate.birthdate}}</a> <br />
+  <a> {{candidate.platform}}</a> <br />
+
+
+
+
+  <a href={% url 'votes:index' %}><input type="button" value="More Candidates"></a>
+
+{% endblock %}
